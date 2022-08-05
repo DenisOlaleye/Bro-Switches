@@ -1,5 +1,42 @@
+import java.util.Scanner;
 
-public class Switches 
+public class Switches
+{
+	public static void main(String[] args) 
+	{
+		Scanner input = new Scanner(System.in);
+		
+		String desire;
+		
+		System.out.println("School of magic offers: basketball, weed, training, singing, hustling");
+		System.out.print("Enter your desire: ");
+		desire = input.nextLine();
+		
+		switch(desire)
+		{
+		case "basketball": System.out.println("Let's go on the yard!");
+		break;
+		case "weed": System.out.println("Let's roll some blants!");
+		break;
+		case "training": System.out.println("Let's go hard!");
+		break;
+		case "singing": System.out.println("Let's go on the studio!");
+		break;
+		case "hustling": System.out.println("Let's go on the street!");
+		break;
+		default: System.out.println("There is no such activity in our school yet");
+		}
+		
+		
+	}
+}
+
+
+
+
+
+
+/*public class Switches 
 {
 
 	public static void main(String[] args) 
@@ -29,3 +66,4 @@ public class Switches
 		
 	}
 }
+*/
